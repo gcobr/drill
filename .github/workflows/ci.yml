@@ -122,6 +122,7 @@ jobs:
           fi
 
   docker:
+    needs: build
     name: Build Docker Image
     runs-on: ubuntu-latest
     if: github.repository == 'gcobr/drill'
